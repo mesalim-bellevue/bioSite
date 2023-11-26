@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*
+  Designer: Meher Salim
+  File Name: styles.css
+  Date: 11.24.23
+*/
+
+/*  */
+
+/* Media queries */
+/* Mobile */
+@media only screen and (max-width: 767px){
+	
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px){
+	
+}
