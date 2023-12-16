@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/*
+  Designer: Meher Salim
+  File Name: styles.css
+  Date: 11.24.23
+*/
+
+/*
+Notes:
+------
+colors:
+  pink - #fbaeda
+  grey - #d3cfcf
+  teal - #00ece6
+  mid-grey - #555555
+  black - #000
+  white - #fff
+fonts:
+  font-family: 'Commissioner', sans-serif;
+  font-family: 'Poiret One', sans-serif;
+References:
+
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Poiret+One&display=swap');
+
+/* Style rules for */
+
+
+/* CSS Reset */
+body, header, nav, footer, img, ul, .social, .menu{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body{
+  background: fixed;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: block;
+}
+h1, h2, h3{
+  font-family: 'Poiret One', sans-serif;
+}
+p, h4{
+  font-family: 'Poiret One', sans-serif;
+}
+.icon{
+  size: 5%;
+}
+
+/* Style rules for header */
+/* Style rules for social */
+/*.social{
+  /*fixed navbar
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}*/
+.social ul{
+  list-style-type: none;
+  display: flex;
+  padding: 1%;
+}
+.social li{
+  padding: 1%;
+}
+.social img{
+  width: 35px;
+}
+
+/*header*/
+header{
+  padding: 1em 2em 2em 2em;
+}
+/*logo*/
+.logo{
+  padding: 3%;
+  background-color: #fff;
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* Style rules for navbar */
+/* Style rules for main menu navbar */
+.nav ul{
+  display: flex;
+  list-style-type: none;
+  padding: 1%;
+}
+.nav li{
+  padding: 1%;
+}
+.nav li a{
+  color: #fbaeda;
+}
+.nav li a:hover{
+  color: #00ece6;
+}
+
+/* Style rules for main */
+main{
+  margin: 5%;
+  padding: 5%;
+  background-color: #d3cfcf;
+  border-left: #00ece6 double 5px;
+  border-top: #00ece6 double 5px;
+  border-right: #fbaeda double 5px;
+  border-bottom: #fbaeda double 5px;
+  color: #000;
+}
+
+/* Style rules for footer */
+footer{
+  background-color: #fbaeda;
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Media Queries */
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px){
+}
