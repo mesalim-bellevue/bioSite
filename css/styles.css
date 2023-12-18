@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/*
+  Designer: Meher Salim
+  File Name: styles.css
+  Date: 11.24.23
+*/
+
+/*
+Notes:
+------
+colors:
+  pink - #fbaeda
+  grey - #d3cfcf
+  teal - #00ece6
+  mid-grey - #555555
+  black - #000
+  white - #fff
+fonts:
+  font-family: 'Commissioner', sans-serif;
+  font-family: 'Poiret One', sans-serif;
+  font-family: 'Cantarell', sans-serif;
+References:
+codepen.com
+w3schools.com
+mdn web docs
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Commissioner:wght@200&family=Poiret+One&display=swap');
+/* Style rules for */
+
+
+/* CSS Reset */
+body, header, nav, footer, img, ul, .social, .menu{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body{
+  background-color: #000;
+  background: fixed;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+  display: block;
+  font-family: 'Cantarell', sans-serif;
+}
+h1{
+  font-family: 'Commissioner', sans-serif;
+  font-size: 3em;
+}
+h2{
+  font-family: 'Commissioner', sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+}
+h3{
+  font-family: 'Poiret One', sans-serif;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+h4{
+  font-size: 1.50em;
+}
+
+.icon{
+  width: 25px;
+  background-color: #000;
+  border: #000 solid 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Style rules for header */
+/* Social */
+.social{
+  cursor: pointer;
+}
+.social ul{
+  list-style-type: none;
+  display: flex;
+  padding: 1%;
+}
+.social li{
+  padding: 1%;
+}
+.social img{
+  width: 35px;
+}
+/* Logo */
+.logo{
+  margin: 0% 35% 5%;
+  padding: 25px;
+  background-color: #fff;
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* Style rules for navbar */
+/* Nav */
+.nav{
+  margin: 0 auto;
+  width: 80%;
+  cursor: pointer;
+  font-family: 'Poiret One', sans-serif;
+  text-transform: uppercase;
+  font: bold 25px;
+}
+.nav ul{
+  display: flex;
+  list-style-type: none;
+}
+.nav li{
+  margin: auto;
+}
+.nav li a{
+  color: #fbaeda;
+  background-color: #000;
+  padding: 5px;
+  border: #00ece6 solid 1px;
+}
+.nav li a:hover{
+  color: #00ece6;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 5px;
+  border: #fbaeda solid 1px;
+}
+
+/* Style rules for main */
+main{
+  margin: 3%;
+  padding: 3%;
+  background-color: #d3cfcf;
+  border-left: #00ece6 double 10px;
+  border-top: #00ece6 double 10px;
+  border-right: #fbaeda double 10px;
+  border-bottom: #fbaeda double 10px;
+  color: #000;
+}
+#resume-main{
+  padding: 20px;
+}
+#about-main{
+  padding: 20px;
+}
+#index-main{
+  padding: 20px;
+}
+#sp-main{
+  padding: 20px;
+}
+#index-main .icon{
+  width: 50px;
+  background-color: #000;
+  padding: 5px;
+  border: #000 solid 1px;
+  border-radius: 50%;
+}
+#index-main ul{
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+}
+#index-main li{
+  padding: 5px;
+  margin: auto;
+}
+/*images*/
+.profile{
+  border-radius: 50%;
+  float: left;
+  margin: 5%;
+  width: 40%;
+}
+.projects{
+  width: 25%;
+}
+#index-main .projects{
+  width: 100%;
+  border: double #fff 5px;
+  display: block;
+  padding: 5px;
+}
+#about-main .me{
+  width: 100%;
+  padding: 5px;
+  border-radius: 25%;
+  border: #fff solid 5px;
+}
+.pgallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pgallery img{
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  border: 10px solid #fefae0;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+  transition-duration: 1s;
+}
+.pgallery img:hover {
+  border: 5px solid #fff;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+
+
+
+/* Style rules for form */
+form{
+  border: solid #000;
+}
+
+/* Style rules for footer */
+footer{
+  background-color: #fbaeda;
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Media Queries */
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  /*nav*/
+  .nav{
+    font-size: 30px;
+  }
+  /*sp skills*/
+  .sp-sec1 .tech{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lang software";
+  }
+  .lang{
+    grid-area: lang;
+  }
+  .software{
+    grid-area: software;
+  }
+  #sp-main h3{
+    text-align: center;
+  }
+  .sp-sec1 .pskill{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px){
+  /*nav*/
+  .nav{
+    font-size: 30px;
+  }
+  /*home page projects section*/
+  #index-main .index-sec3{
+    display: flex;
+  }
+  /*sp skills*/
+  .sp-sec1 .skills{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "lang software";
+  }
+  .lang{
+    grid-area: lang;
+  }
+  .software{
+    grid-area: software;
+  }
+  #sp-main h3{
+    text-align: center;
+  }
+  .sp-sec1 .pskill{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+}
